@@ -1,0 +1,13 @@
+FROM ros:indigo-ros-core
+
+RUN apt-get update && \
+apt-get install -y cmake build-essential libx11-dev libxml2-dev libgl1-mesa-dev libglu-dev libxpm-dev libglpk-dev libgsl0-dev libgts-dev libqhull-dev libformsgl-dev libforms-dev swig tcl-dev tk-dev libboost-dev libboost-filesystem-dev libboost-iostreams-dev libboost-math-dev libboost-thread-dev freeglut3-dev libeigen3-dev liblog4cxx10-dev libjsoncpp-dev libqt4-dev python3-sip-dev python3-pip ipython3 libnlopt-dev lsb-release curl libboost-test-dev liburdfdom-dev ros-indigo-urdf ros-indigo-tf2 ros-indigo-tf
+
+COPY ./install-robotpkg.bash /
+
+RUN bash /install-robotpkg.bash; \
+        apt-get install -y robotpkg-gbm+tcl robotpkg-softmotion-libs robotpkg-orocos-kdl robotpkg-libkdtp
+
+ENV PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/opt/openrobots/lib/pkgconfig:$INSTALL_DIR/lib/pkgconfig ROBOTPKG_BASE=/opt/openrobots/ LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/move4d/lib PATH=$PATH:/move4d/bin CMAKE_FRAMEWORK_PATH=${CMAKE_FRAMEWORK_PATH}:/move4d/lib LIB=$LD_LIBRARY_PATH
+
+CMD ["bash", "/move4d/install.bash"]

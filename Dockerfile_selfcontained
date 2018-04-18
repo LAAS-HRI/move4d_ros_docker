@@ -1,0 +1,7 @@
+FROM move4d_ros:run
+
+COPY ./move4d/catkin_ws  /move4d/catkin_ws
+COPY ./move4d/lib  /move4d/lib
+COPY ./move4d/run.bash /move4d/
+
+CMD ["bash", "/move4d/run.bash"]

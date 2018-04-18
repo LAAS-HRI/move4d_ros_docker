@@ -1,0 +1,21 @@
+[submodule "move4d/src/move4d"]
+	path = move4d/src/move4d
+	url = https://redmine.laas.fr/laas/move3d/move4d/move4d.git
+	branch = wip
+[submodule "move4d/src/libmove3d"]
+	path = move4d/src/libmove3d
+	url = https://redmine.laas.fr/laas/move3d/libmove3d.git
+	branch = move4d
+[submodule "move4d/src/move4d_visibility_plugin"]
+	path = move4d/src/move4d_visibility_plugin
+	url = https://github.com/LAAS-HRI/move4d_visibility_plugin.git
+	branch = mummer
+[submodule "move4d/catkin_ws/src/move4d_ros_lib"]
+	path = move4d/catkin_ws/src/move4d_ros_lib
+	url = https://github.com/laas/move4d_ros_lib.git
+[submodule "move4d/catkin_ws/src/laas_models"]
+	path = move4d/catkin_ws/src/laas_models
+	url = https://github.com/LAAS-HRI/laas_models.git
+[submodule "move4d/catkin_ws/src/pointing_planner"]
+	path = move4d/catkin_ws/src/pointing_planner
+	url = https://github.com/LAAS-HRI/pointing_planner.git

@@ -1,0 +1,5 @@
+FROM move4d_ros:build
+
+ENV PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/opt/openrobots/lib/pkgconfig:$INSTALL_DIR/lib/pkgconfig ROBOTPKG_BASE=/opt/openrobots/ LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/move4d/lib PATH=$PATH:/move4d/bin
+
+CMD ["bash", "/move4d/run.bash"]
