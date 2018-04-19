@@ -18,7 +18,10 @@ It runs with:
     
 
 ## Updating
-TODO
+
+    git pull
+    git submodule update --remote
+    make
 
 ## The move4d_ros:build image
 
