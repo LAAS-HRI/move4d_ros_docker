@@ -20,7 +20,7 @@ It runs with:
 ## Updating
 
     git pull
-    git submodule update --remote
+    git submodule update --init --remote # the--init is usefull only when new submodules are added (I guess)
     make
 
 ## The move4d_ros:build image
