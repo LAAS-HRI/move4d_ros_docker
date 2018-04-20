@@ -22,3 +22,4 @@
 [submodule "move4d/data"]
 	path = move4d/data
 	url = https://jwaldart@redmine.laas.fr/laas/move3d/data.git
+    branch = move4d
