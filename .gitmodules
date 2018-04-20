@@ -19,3 +19,6 @@
 [submodule "move4d/catkin_ws/src/pointing_planner"]
 	path = move4d/catkin_ws/src/pointing_planner
 	url = https://github.com/LAAS-HRI/pointing_planner.git
+[submodule "move4d/data"]
+	path = move4d/data
+	url = https://jwaldart@redmine.laas.fr/laas/move3d/data.git
