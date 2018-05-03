@@ -13,7 +13,7 @@ ${assimp_src}:
 	(cd move4d/src; bash download_assimp.bash)
 	
 run:
-	docker run --net=host -e ROS_MASTER_URI=${ROS_MASTER_URI} -v ${current_dir}/move4d:/move4d move4d_ros
+	docker run --net=host -e ROS_MASTER_URI=${ROS_MASTER_URI} move4d_ros
 
 run-vol:
 	docker run --net=host -e ROS_MASTER_URI=${ROS_MASTER_URI} -v ${current_dir}/move4d:/move4d move4d_ros:vol
