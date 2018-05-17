@@ -1,4 +1,4 @@
-FROM move4d_ros:run
+FROM move4d_ros:vol
 
 COPY ./move4d/catkin_ws  /move4d/catkin_ws
 COPY ./move4d/lib  /move4d/lib
