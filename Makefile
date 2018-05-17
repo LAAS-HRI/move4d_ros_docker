@@ -15,6 +15,9 @@ ${assimp_src}:
 run:
 	docker run --net=host -e ROS_MASTER_URI=${ROS_MASTER_URI} move4d_ros
 
+run-it:
+	docker run -it --net=host -e ROS_MASTER_URI=${ROS_MASTER_URI} move4d_ros bash
+
 run-vol:
 	docker run --net=host -e ROS_MASTER_URI=${ROS_MASTER_URI} -v ${current_dir}/move4d:/move4d move4d_ros:vol
 
