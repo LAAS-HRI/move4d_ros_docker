@@ -9,7 +9,7 @@
 [submodule "move4d/src/move4d_visibility_plugin"]
 	path = move4d/src/move4d_visibility_plugin
 	url = https://github.com/LAAS-HRI/move4d_visibility_plugin.git
-	branch = mummer
+	branch = mummer-int
 [submodule "move4d/catkin_ws/src/move4d_ros_lib"]
 	path = move4d/catkin_ws/src/move4d_ros_lib
 	url = https://github.com/laas/move4d_ros_lib.git
