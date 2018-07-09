@@ -11,7 +11,7 @@ make -j8 install
 
 mkdir -p /move4d/src/libmove3d/build
 cd /move4d/src/libmove3d/build
-cmake .. -DCMAKE_INSTALL_PREFIX=/move4d -DUSE_ROS_URDF=ON
+cmake .. -DCMAKE_INSTALL_PREFIX=/move4d -DUSE_ROS_URDF=ON -DQT_LIBRARY=ON
 make -j8 install
 
 mkdir -p /move4d/src/move4d/build
